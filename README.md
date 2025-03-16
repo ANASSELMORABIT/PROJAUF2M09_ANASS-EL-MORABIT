@@ -4,7 +4,7 @@ Proyecto: Página Web Interactiva con Animaciones y Multimedia
 
 Este proyecto es una página web interactiva que combina animaciones, contenido multimedia y una interfaz moderna y atractiva. El sitio incluye una pantalla de introducción animada, una navegación intuitiva y secciones dedicadas a imágenes, videos, audio y contacto.
 
-Características Principales
+**Características Principales**
 
 Pantalla de Introducción Animada: Presenta un mensaje de bienvenida con un botón de exploración interactivo.
 
@@ -24,14 +24,14 @@ Mapa Integrado: Un mapa de Google Maps para indicar la ubicación.
 
 Pie de Página con Redes Sociales: Enlaces a redes sociales y contacto.
 
-Tecnologías Utilizadas
+**Tecnologías Utilizadas**
 
-HTML5: Estructura semántica de la página.
+**HTML5**: Estructura semántica de la página.
 
-CSS3: Estilos avanzados y animaciones.
+**CSS3**: Estilos avanzados y animaciones.
 
-JavaScript (Vanilla JS): Interactividad, carrusel, reproductor de audio y eventos dinámicos.
+**JavaScript (Vanilla JS)**: Interactividad, carrusel, reproductor de audio y eventos dinámicos.
 
-Bootstrap 5: Diseño responsivo y componentes modernos.
+**Bootstrap 5:** Diseño responsivo y componentes modernos.
 
-SweetAlert2: Notificaciones interactivas y atractivas.
+**SweetAlert2:** Notificaciones interactivas y atractivas.
