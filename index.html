@@ -355,26 +355,27 @@
                 <p>Ponte en contacto para más información o si tienes alguna duda. ¡Nos encantaría saber de ti!</p>
             
 
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
                     </div>
-            
+                
                     <div class="form-group">
                         <label for="email">Correo Electrónico</label>
                         <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
                     </div>
-            
+                
                     <div class="form-group">
                         <label for="message">Mensaje</label>
                         <textarea id="message" name="message" placeholder="Tu mensaje..." rows="5" required></textarea>
                     </div>
-            
+                
                     <div class="form-group">
                         <button type="submit" class="btn-submit">Enviar Mensaje</button>
                     </div>
                 </form>
+                
             
 
                 <div class="map-container">
@@ -435,8 +436,55 @@
 
 
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     
     <script src="script.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe normalmente
+        
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+        
+            // Validar que los campos no estén vacíos
+            if (name === "" || email === "" || message === "") {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Todos los campos son obligatorios",
+                    confirmButtonColor: "#50dfdb"
+                });
+                return;
+            }
+        
+            // Simular el envío del formulario con un pequeño delay
+            Swal.fire({
+                title: "Enviando...",
+                text: "Por favor, espera un momento",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                showConfirmButton: false,
+                didOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+        
+            setTimeout(() => {
+                // Simulación de un envío exitoso
+                Swal.fire({
+                    icon: "success",
+                    title: "Mensaje Enviado",
+                    text: "Gracias por contactarnos. Te responderemos pronto.",
+                    confirmButtonColor: "#50dfdb"
+                });
+        
+                // Resetear el formulario después del envío
+                document.getElementById("contactForm").reset();
+            }, 1500); // Simulación de delay de 1.5 segundos
+        });
+        </script>
+        
 </body>
 </html>
