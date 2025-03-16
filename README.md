@@ -1,6 +1,6 @@
 Proyecto: Página Web Interactiva con Animaciones y Multimedia
 
-Descripción
+**Descripción**
 
 Este proyecto es una página web interactiva que combina animaciones, contenido multimedia y una interfaz moderna y atractiva. El sitio incluye una pantalla de introducción animada, una navegación intuitiva y secciones dedicadas a imágenes, videos, audio y contacto.
 
